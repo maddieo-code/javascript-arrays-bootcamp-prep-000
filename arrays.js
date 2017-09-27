@@ -32,10 +32,14 @@ function destructivelyRemoveElementFromEndOfArray(arr) {
 }
 
 function removeElementFromEndOfArray(arr) {
-  return arr.slice(arr.length-1);
+  return arr.slice(0,arr.length-1);
 }
 
 function destructivelyAddElementToEndOfArray(arr,elem) {
   arr.push(elem);
   return arr;
+}
+
+function removeElementFromBeginningOfArray(arr) {
+  return arr.slice(1);
 }
